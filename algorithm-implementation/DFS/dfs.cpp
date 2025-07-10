@@ -24,12 +24,15 @@ vector<int> dfs(unordered_map<int, vector<int>>& graph, int start, int goal) {
         if (visited.find(last_node) == visited.end()) {
             visited.insert(last_node);
         
-            for (auto it = graph[last_node].rbegin(); it != graph[last_node].rend(); ++it) {
-                int neighbor = *it;
-                if (visited.find(neighbor) == visited.end()) {
-                    vector<int> new_path = current_path;
-                    new_path.push_back(neighbor);
-                    paths.push(new_path);
+            // Check if the node exists in the graph
+            if (graph.find(last_node) != graph.end()) {
+                for (auto it = graph[last_node].rbegin(); it != graph[last_node].rend(); ++it) {
+                    int neighbor = *it;
+                    if (visited.find(neighbor) == visited.end()) {
+                        vector<int> new_path = current_path;
+                        new_path.push_back(neighbor);
+                        paths.push(new_path);
+                    }
                 }
             }
         }
@@ -67,6 +70,15 @@ int main() {
     for (int i = 0; i < edges; i++) {
         int from, to;
         cin >> from >> to;
+        
+        // Ensure both nodes exist in the graph
+        if (graph.find(from) == graph.end()) {
+            graph[from] = vector<int>();
+        }
+        if (graph.find(to) == graph.end()) {
+            graph[to] = vector<int>();
+        }
+        
         graph[from].push_back(to);
         if (undirected) {
             graph[to].push_back(from);
