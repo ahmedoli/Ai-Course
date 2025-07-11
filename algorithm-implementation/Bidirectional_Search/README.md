@@ -1,62 +1,118 @@
 # 🔁 Bidirectional Search in C++
 
-This C++ program implements the **Bidirectional Search** algorithm — an advanced and efficient graph search technique used to find the shortest path between a start and goal node by **searching from both directions simultaneously**.
+![Bidirectional Search](https://upload.wikimedia.org/wikipedia/commons/9/9b/Bidirectional_search.svg)
+
+> **Bidirectional Search** is an efficient graph traversal algorithm that runs two simultaneous BFS traversals — one forward from the start node and one backward from the goal node — until they meet. This reduces the effective search space from `O(b^d)` to `O(b^{d/2})`.
 
 ---
 
-## 📘 How the Algorithm Works
+## 📌 Features
 
-Bidirectional Search works by **running two simultaneous Breadth-First Searches** — one from the `start` node and the other from the `goal` node. The idea is that the two searches will meet somewhere in the middle, which significantly reduces the number of nodes explored.
-
-### 🧠 Steps:
-1. Initialize two queues:  
-   - `q_f` for forward BFS from the **start** node  
-   - `q_b` for backward BFS from the **goal** node
-
-2. Initialize two visited sets: `visited_f` and `visited_b`
-
-3. Loop until either queue is empty:
-   - Pop one node from each queue
-   - If there's any node common to both visited sets → ✅ **Path Found**
-   - Otherwise, expand neighbors of each node and update the respective queues and visited sets
-
-4. If queues are exhausted without intersection → ❌ **No Path Found**
+* Interactive CLI: define number of nodes, edges, start, and goal
+* Undirected graph structure
+* Performs two simultaneous BFS traversals
+* Detects intersection between forward and backward paths
+* Compact C++17 implementation using `queue` and `unordered_set`
 
 ---
 
+## 🔧 How the Algorithm Works
 
-## 📚 Applications of Bidirectional Search
+1. **Initialize** two queues: one from the start node, one from the goal.
+2. Expand both sides alternately using BFS.
+3. Keep track of visited nodes in both directions.
+4. If any node is found in both visited sets — a **meeting point** — the search terminates.
+5. If queues are exhausted without meeting, no path exists.
 
-- 🔍 **Finding shortest path** in undirected graphs
-- 🧭 **Navigation systems** (e.g., Google Maps)
-- 🤖 **AI in games and robotics**
-- 🧠 **Pathfinding in large unweighted graphs**
-- 🌐 **Social network analysis** (finding connection paths between users)
-
----
-
-## 📈 Time and Space Complexity
-
-| Metric        | Value                              |
-|---------------|--------------------------------------|
-| **Time**       | O(b^(d/2)) + O(b^(d/2)) = O(b^(d/2)) |
-| **Space**      | O(b^(d/2))                          |
-
-Where:  
-- `b` = branching factor  
-- `d` = distance between start and goal  
-
-> This is exponentially faster than normal BFS for large graphs.
+> This algorithm is ideal for large undirected graphs with a unique start and goal.
 
 ---
 
-## 🔢 Input Format
+## 🖥 Sample Input / Output
 
-- Number of **nodes `n`** and **edges `e`**
-- The `e` edges of the graph (undirected)
-- The **start** and **goal** nodes
+### ✅ Input
+
+```
+Enter number of nodes and edges: 6 7
+Enter edges:
+0 1
+0 2
+1 3
+2 4
+3 5
+4 5
+2 5
+Enter start and goal: 0 5
+```
+
+### 🔽 Output
+
+```
+Path found (meeting point at 3 or 5)
+```
+
+### 🖼 Example Screenshots
+
+**➡️ Input View:**
+![Input Screenshot](https://i.imgur.com/NKOdx9h.png)
+
+**✅ Output View:**
+![Output Screenshot](https://i.imgur.com/WrdbRzK.png)
 
 ---
 
-## 📥 Sample Input
+## 🚀 Applications
 
+| Domain              | Use Case                                                     |
+| ------------------- | ------------------------------------------------------------ |
+| **Social Networks** | Find shortest connection between two users                   |
+| **Routing Systems** | Pathfinding in road networks                                 |
+| **AI/Game Agents**  | Shortest path search in symmetric game spaces                |
+| **Web Crawling**    | Bidirectional traversal between pages                        |
+| **Databases**       | Efficient relationship resolution in graph DBs (e.g., Neo4j) |
+
+---
+
+## ⏱ Complexity Analysis
+
+| Metric    | Complexity                                             |
+| --------- | ------------------------------------------------------ |
+| **Time**  | `O(b^{d/2})` – much faster than BFS (`O(b^d)`)         |
+| **Space** | `O(b^{d/2})` – stores visited nodes in both directions |
+
+---
+
+## 📄 Code Structure
+
+* `main()` – Input reading, graph building, execution driver
+* `bidirectional_search()` – Dual BFS and meeting point detection
+
+```cpp
+bool bidirectional_search(vector<vector<int>>& graph, int start, int goal);
+```
+
+---
+
+## ✅ Dependencies
+
+* C++17 Standard: `iostream`, `vector`, `queue`, `unordered_set`
+
+---
+
+## 🧪 Compile & Run
+
+```bash
+# Compile
+g++ bidirectional.cpp -o bidirectional
+
+# Execute
+./bidirectional
+```
+
+Enter nodes, edges, and search endpoints during runtime.
+
+---
+
+## 🙌 Contributions & Feedback
+
+Found a bug or have an enhancement in mind? Feel free to fork, submit a pull request, or share suggestions.

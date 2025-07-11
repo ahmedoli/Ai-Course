@@ -1,55 +1,103 @@
-# 🔍 Iterative Deepening Search (IDS) in C++
 
-This project implements the **Iterative Deepening Search (IDS)** algorithm using a combination of **Depth-Limited Search (DLS)** with gradually increasing depth limits. IDS combines the space-efficiency of Depth-First Search (DFS) with the completeness of Breadth-First Search (BFS).
+# 🔍 Iterative Deepening Search (IDS) Algorithm in C++
 
----
-
-## 📘 How the Algorithm Works
-
-**Iterative Deepening Search** repeatedly runs **Depth-Limited Search (DLS)** with increasing depth limits, starting from 0 and increasing until the goal is found or a maximum depth is reached.
-
-### 🧠 Algorithm Steps:
-1. Set an initial depth limit to 0.
-2. Perform Depth-Limited Search up to the current depth limit.
-3. If the goal is found → 🎯 return success.
-4. Else, increment the depth limit and repeat.
-5. Stop when the goal is found or maximum depth is exceeded.
-
-> IDS explores nodes level by level like BFS but uses less memory by performing DFS repeatedly with limited depth.
-
----
-## 🧠 Applications of Iterative Deepening Search
-
-- 🌐 **AI game tree searches** (e.g., chess, checkers)
-- 🔄 **State-space search** where depth is unknown
-- 🚀 **Memory-limited environments** requiring DFS-like space usage
-- 🔎 **Finding shortest paths** in unweighted graphs (like BFS)
-- 🧠 **Robotics and puzzle solving**
+> Iterative Deepening Search combines the depth-first search's space efficiency and breadth-first search's completeness by performing depth-limited searches with increasing depth limits until the goal is found.
 
 ---
 
-## 📈 Time and Space Complexity
+## 📌 Features
 
-| Metric        | Complexity                   |
-|---------------|------------------------------|
-| **Time**       | O(b<sup>d</sup>)             |
-| **Space**      | O(d)                        |
-
-Where:  
-- `b` = branching factor  
-- `d` = depth of the shallowest goal node  
-
-> IDS performs some repeated work but is still efficient for many search problems with unknown depth.
+- Uses Depth-Limited Search (DLS) as a building block.
+- Iteratively increases the depth limit to avoid the pitfalls of DFS and BFS.
+- Stops when the goal node is found or maximum depth is reached.
+- Works well for large or infinite search spaces where the depth of the solution is unknown.
+- Supports directed graphs with user-defined nodes and edges.
 
 ---
 
-## 🔢 Input Format
+## 🔧 How the Algorithm Works
 
-- Number of nodes `n` and edges `e`
-- List of directed edges `(u v)`
-- Start and goal nodes
+1. Start with depth limit = 0.
+2. Perform a depth-limited DFS (DLS) to the current limit.
+3. If the goal is found, stop.
+4. Otherwise, increase the depth limit and repeat.
+5. Continue until the goal is found or the maximum depth limit is reached.
+
+This method explores nodes level by level, but uses depth-first traversal with limited depth.
 
 ---
 
-## 🧪 Sample Input
+## 🖥 Sample Input / Output
 
+### Input
+
+Enter number of nodes and edges: 6 7
+Enter edges (u v):
+0 1
+0 2
+1 3
+1 4
+2 4
+3 5
+4 5
+Enter start and goal node: 0 5
+
+
+### Output
+Goal found at depth 3
+
+
+---
+
+## 🚀 Applications
+
+| Domain            | Use Case                                       |
+|-------------------|------------------------------------------------|
+| **Artificial Intelligence** | Search in large or infinite state spaces    |
+| **Game Playing**  | Finding solutions in game trees                 |
+| **Robotics**      | Planning with unknown or large search depths    |
+| **Tree/Graph Traversal** | Memory-efficient exploration of nodes        |
+| **Problem Solving** | Iterative refinement in unknown solution depths|
+
+---
+
+## ⏱ Complexity Analysis
+
+| Metric     | Complexity                       |
+|------------|---------------------------------|
+| **Time**   | \(O(b^d)\), where \(b\) = branching factor, \(d\) = depth of solution |
+| **Space**  | \(O(bd)\), linear space due to DFS stack                  |
+
+---
+
+## 📄 Code Structure
+
+- `main()` — Reads graph input and runs IDS with a max depth.
+- `IDS()` — Iterates increasing depth limits calling DLS.
+- `DLS()` — Performs depth-limited DFS with visited tracking.
+
+---
+
+## ✅ Dependencies
+
+- Standard C++ headers: `iostream`, `vector`
+
+---
+
+## 🧪 Compile & Run
+
+```bash
+# Compile
+g++ ids.cpp -o ids
+
+# Run
+./ids
+```
+
+Enter your graph, start & goal nodes, and chosen depth limit when prompted.
+
+---
+
+## 🙌 Contributions & Feedback
+
+Feel free to open issues or submit pull requests for improvements, bug fixes, or feature additions.

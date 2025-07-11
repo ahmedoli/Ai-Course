@@ -1,48 +1,129 @@
-# 🎯 Alpha-Beta Pruning Algorithm
+# ♟️ Minimax with Alpha–Beta Pruning in C++
 
-An efficient implementation of the **Alpha-Beta Pruning** algorithm using C++. This optimization is applied to the **Minimax algorithm** used in decision-making and game theory, most notably in **two-player turn-based games** like Tic-Tac-Toe, Chess, etc.
+![Alpha–Beta Pruning Banner](https://upload.wikimedia.org/wikipedia/commons/9/97/Alpha-beta_pruning.svg)
 
----
-
-## 📌 How the Algorithm Works
-
-Alpha-Beta Pruning is an enhancement of the **Minimax algorithm** that eliminates branches in the game tree which cannot possibly influence the final decision.
-
-### 🧠 Concept:
-- Two players: **Maximizer** and **Minimizer**
-- The algorithm explores a game tree of certain height `h`, where:
-  - Each **Max** level tries to maximize the value.
-  - Each **Min** level tries to minimize the value.
-
-### 🔁 Alpha & Beta:
-- **Alpha**: Best value that the maximizer can guarantee so far.
-- **Beta**: Best value that the minimizer can guarantee so far.
-- If `beta ≤ alpha`, further exploration is **pruned** as it won't affect the result.
-
-### 👣 Steps:
-1. Start from root node (depth 0).
-2. Traverse to leaves (depth = height `h`).
-3. Return scores at leaf level.
-4. Apply **alpha-beta bounds** while traversing up to avoid unnecessary branches.
+> **Alpha–Beta pruning** is an optimization technique for the **Minimax** algorithm that reduces the number of nodes evaluated in the game tree, enabling faster decision‑making in two‑player, perfect‑information games such as Chess, Checkers, and Tic‑Tac‑Toe.
 
 ---
 
-## 🧮 Time & Space Complexity
+## 📌 Features
 
-| Factor            | Complexity  |
-|------------------|-------------|
-| **Best Case**     | O(b<sup>d/2</sup>) |
-| **Worst Case**    | O(b<sup>d</sup>)   |
-| **Space**         | O(d) — due to recursion stack |
-
-Where:
-- `b` = branching factor (2 in this case)
-- `d` = depth of the tree
+* Interactive CLI—choose tree height and provide leaf scores
+* **Automatic tree construction** for a complete binary game tree
+* Implements **Maximizer vs. Minimizer** turn alternation
+* Efficient pruning using running `alpha` and `beta` bounds
+* Reports the **optimal game value** and shows pruning in action (via console output)
 
 ---
 
-## 🛠 Sample Input & Output
+## 🔧 How the Algorithm Works
 
-### 🔢 Sample Run:
+### 🧠 Minimax Recap
 
-**User Input:**
+Minimax explores the entire game tree to choose a move that **maximizes** the player’s minimum gain, assuming the opponent plays perfectly.
+
+### 🚀 Alpha–Beta Optimization
+
+Alpha–Beta introduces two parameters:
+
+* **α (alpha)** – best value that the Maximizer can guarantee so far.
+* **β (beta)** – best value that the Minimizer can guarantee so far.
+
+During traversal:
+
+1. **Max nodes** update `alpha = max(alpha, best)`; prune subtree if `alpha ≥ beta`.
+2. **Min nodes** update `beta = min(beta, best)`; prune subtree if `beta ≤ alpha`.
+
+This pruning **skips evaluating** branches that cannot improve the final decision, significantly speeding up search without affecting correctness.
+
+---
+
+## 🖥 Sample Input / Output
+
+### ✅ Input
+
+```
+Enter height of the game tree: 3
+Enter 8 leaf node values:
+3 17 2 12 15 25 2 5
+```
+
+### 🔽 Output
+
+```
+Optimal value with alpha-beta pruning: 12
+```
+
+### 🖼 Example Screenshots
+
+**➡️ Input Example:**
+
+![Input Screenshot](https://i.imgur.com/6qA4tq1.png)
+
+**✅ Output Example:**
+
+![Output Screenshot](https://i.imgur.com/batU9yM.png)
+
+---
+
+## 🚀 Applications of Alpha–Beta Pruning
+
+| Domain               | Use Case                                                             |
+| -------------------- | -------------------------------------------------------------------- |
+| **Game AI**          | Chess engines (e.g., Stockfish), Checkers, Connect‑Four, Tic‑Tac‑Toe |
+| **Robotics**         | Decision planning in adversarial environments                        |
+| **Security**         | Intrusion‑detection simulations & attacker–defender models           |
+| **Economics**        | Competitive market simulations                                       |
+| **Operational R\&D** | Optimizing adversarial search problems in research and development   |
+
+---
+
+## ⏱ Complexity Analysis
+
+| Metric               | Complexity                                             |
+| -------------------- | ------------------------------------------------------ |
+| **Time (No Prune)**  | `O(b^d)` – where `b` is branching factor, `d` is depth |
+| **Time (Best‑Case)** | `O(b^{d/2})` with perfect ordering (50 % nodes pruned) |
+| **Space**            | `O(b·d)` for recursion stack + evaluation scores       |
+
+In practice, Alpha–Beta often yields **orders‑of‑magnitude** speedups versus plain Minimax, especially with good move ordering heuristics.
+
+---
+
+## 📄 Code Structure
+
+* `main()` – Collects user input and prints the optimal value.
+* `alpha_beta()` – Recursive Minimax with Alpha‑Beta pruning.
+* `evaluate()` – Leaf‑node evaluation function (returns static score).
+
+```cpp
+int alpha_beta(int depth, int node_index, bool is_max,
+               const vector<int>& scores, int h,
+               int alpha, int beta);
+```
+
+---
+
+## ✅ Dependencies
+
+* Standard C++17 (STL): `iostream`, `vector`, `climits`, `algorithm`
+
+---
+
+## 🧪 Try It Yourself
+
+```bash
+# Compile
+g++ alpha_beta.cpp -o alpha_beta
+
+# Run
+./alpha_beta
+```
+
+Enter the tree height `h` and provide `2^h` leaf scores when prompted.
+
+---
+
+## 🙌 Contributions & Feedback
+
+Issues, pull requests, and suggestions are welcome! Feel free to fork and enhance the project.

@@ -1,103 +1,99 @@
+# Tic-Tac-Toe Game (Human vs Computer)
 
-
-# 🕹️ Tic-Tac-Toe (with Minimax AI)
-
-This is a classic **Tic-Tac-Toe game** where you play as **Player X** against an unbeatable **AI opponent (Player O)**. The game is built using **Python's Tkinter** library for the GUI and implements the **Minimax algorithm** to simulate smart computer moves.
-
----
-
-## 🔧 How to Run the File
-
-1. Make sure **Python 3.x** is installed on your computer.
-2. Save the Python file as: `tic_tac_toe.py`
-3. Open a terminal or command prompt and navigate to the directory containing the file.
-4. Run the file using:
-
-```bash
-python tic_tac_toe.py
-```
+This is a classic Tic-Tac-Toe game implemented in Python using the `tkinter` GUI framework. You play as **X**, and the computer plays as **O**, powered by the **Minimax algorithm** for an unbeatable AI experience.
 
 ---
 
 ## 📦 Requirements
 
-✅ You only need **Python 3.x** installed — no external libraries required.
+Before running the game, make sure you have Python installed on your system.
 
-### Built-in Libraries Used:
+### ✅ Pre-installed Libraries:
 
-* `tkinter`: For creating the graphical user interface (GUI)
-* `math`: For using mathematical constants like `inf` (infinity)
+* `tkinter` (comes bundled with standard Python installations)
+* `math` (standard Python module)
 
-> No need to install anything separately — everything is built into standard Python.
-
----
-
-## 🎮 How to Play the Game
-
-* **You play as X**, the computer plays as **O**.
-* Click on an **empty box** in the 3x3 grid to place your move.
-* The computer will automatically respond with its optimal move.
-* **Goal**: Get three of your symbols in a row (horizontal, vertical, or diagonal) before the computer does.
-* If all cells are filled and no one wins, it’s declared a **draw**.
-* After a game ends (win or draw), the board will **automatically reset** for a new game.
+No external packages are required.
 
 ---
 
-## 🧠 Algorithm Used
+## ▶️ How to Run the Game
 
-The game uses the **Minimax Algorithm** for AI:
+1. Save the code into a Python file, e.g., `tic_tac_toe.py`
+2. Open your terminal or command prompt.
+3. Navigate to the folder containing the file.
+4. Run the following command:
 
-* It explores **all possible future game states** recursively.
-* The computer always plays **optimally**, trying to **maximize its chances of winning**.
-* The player is assumed to also play optimally, and the AI will counter all possible human strategies.
-* Ensures that the AI is **unbeatable** — at best, the human can get a draw.
+```bash
+python tic_tac_toe.py
+```
 
----
-
-## 📸 Screenshots
-
-You can include the following screenshots in a `screenshots/` folder:
-
-### 🖼️ Game Interface:
-
-> Screenshot showing the initial game grid
-
-![Game Window](screenshots/game_window.png)
+A GUI window will open for the game.
 
 ---
 
-### ✅ Player Wins:
+## 🎮 How to Play
 
-> Screenshot after player (X) wins
+* The player is **X** and always plays first.
+* Click any square in the 3x3 grid to make your move.
+* The computer will respond immediately using the Minimax strategy.
+* The game announces the result via a popup message:
 
-![Player Win](screenshots/player_win.png)
-
----
-
-### ❌ Computer Wins:
-
-> Screenshot after computer (O) wins
-
-![Computer Win](screenshots/computer_win.png)
+  * You win!
+  * Computer wins!
+  * It's a draw!
+* The board automatically resets for a new game after each round.
 
 ---
 
-### 😐 Draw Game:
+## 🧠 AI Algorithm Used
 
-> Screenshot showing a full board with no winner
+### Minimax Algorithm
 
-![Draw](screenshots/draw.png)
+The computer's decisions are powered by the **Minimax algorithm**, a recursive strategy used in decision-making and game theory. It assumes that your opponent (the human) will always play optimally and tries to minimize the possible loss.
+
+Key properties:
+
+* Optimal play (unbeatable AI)
+* Depth-based scoring system:
+
+  * +1 if AI wins
+  * -1 if player wins
+  * 0 for a draw
 
 ---
 
-## 💡 Bonus Tip
+## 🖼️ Screenshots
 
-Want to customize the look or symbols? You can easily modify the:
+> 🧩 *You can take screenshots of the game running and place them in your project folder.*
 
-* Button colors and fonts
-* Symbols used (e.g., emojis like ❌ and ⭕)
-* Add a scoreboard for tracking wins/draws
+**Suggested file structure:**
+
+```
+/your-project-folder
+|-- tic_tac_toe.py
+|-- README.md
+|-- screenshots/
+    |-- gameplay1.png
+    |-- gameplay2.png
+```
+
+To add screenshots in your `README.md`:
+
+```markdown
+![Gameplay 1](screenshots/gameplay1.png)
+![Gameplay 2](screenshots/gameplay2.png)
+```
 
 ---
 
-> ✅ This project is perfect for learning **basic AI**, **game logic**, and **Python GUI programming** using `Tkinter`.
+## 💡 Tips
+
+* You cannot beat the AI if it plays first or second correctly.
+* Try to create forks and block opponent's forks to play smart.
+
+---
+
+## 📜 License
+
+This project is open-source and free to use for learning or modification purposes.
