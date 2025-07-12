@@ -1,7 +1,3 @@
-Sure! Here's your **well-formatted, corrected, and cleanly structured `README.md`** for your Connect Four game:
-
----
-
 # 🔴🟡 Connect Four (AI vs Player) using Minimax with Alpha-Beta Pruning
 
 This is a classic **Connect Four** game where a human player competes against an **AI opponent** built using the **Minimax algorithm** with **Alpha-Beta Pruning**. The game features a user-friendly **GUI built with Pygame**.
