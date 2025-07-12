@@ -88,21 +88,21 @@ The AI is powered by a **Minimax algorithm** that:
 
 ## 📸 Screenshots
 
-Add the following images to a folder named `screenshots/`:
+* 🧩 Here are some visuals of the game:
 
-* 🧩 **Menu Screen** – Game startup menu
-  `screenshots/menu.png`
+### **Menu Screen**
+![Image](https://github.com/user-attachments/assets/709bcde2-0c8f-4edf-9fe0-d3ab9ebde5af)
 
-* 🎯 **Game in Progress** – Mid-game with both players playing
-  `screenshots/gameplay.png`
+### **Gameplay - Player's Turn**
+![Image](https://github.com/user-attachments/assets/135adcdb-7959-480d-b872-0941472eee47)
 
-* 🏆 **Player Wins** – Human player connects 4
-  `screenshots/player_win.png`
+### **Gameplay - AI's Turn**
+![Image](https://github.com/user-attachments/assets/5fc9d852-7689-48c9-bdd4-89b4f8ae57f4)
 
-* 🤖 **AI Wins** – Computer connects 4
-  `screenshots/ai_win.png`
+### **Winning Screen - Player / AI Wins**
+![Image](https://github.com/user-attachments/assets/04a8bf6c-9ffa-48ca-a6d2-5e6f6a5af2ab)
+### **Gameplay - After wining**
+![Image](https://github.com/user-attachments/assets/b22c5756-1ded-485a-afa2-1bc5f7116903)
 
-* ⚖️ **Draw Game** – Full board with no winner
-  `screenshots/draw.png`
-
+ 
 ---
