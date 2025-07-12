@@ -65,7 +65,25 @@ Key properties:
 
 ## 🖼️ Screenshots
 
-> 🧩 *You can take screenshots of the game running and place them in your project folder.*
+> 🧩 Here are some visuals of the game:
+
+### **Game Board**
+![Image](https://github.com/user-attachments/assets/74c3126c-cd69-4a65-be06-9a722919c0b1)
+
+### **Player's Turn**
+![Image](https://github.com/user-attachments/assets/f3559259-c3f8-4179-8337-eca9df881b9e)
+### **Computer's Turn**
+![Image](https://github.com/user-attachments/assets/aed4246e-9206-4b1f-9a99-70881cc23e50)
+### **after compelete game with multiple moves**
+![Image](https://github.com/user-attachments/assets/eefa65e4-2816-4f12-a3ad-0b7fac1e98d6)
+### **Draw Screen**
+![Image](https://github.com/user-attachments/assets/d92f71cd-a685-4b5e-8ad4-2e0e016434ba)
+### **New game with multiple moves**
+![Image](https://github.com/user-attachments/assets/4e8d4690-dece-4f52-96d2-70430165a2ba)
+### **Winning Screen (Player/Computer Wins)**
+![Image](https://github.com/user-attachments/assets/0aef7239-dba7-492f-b9cc-0c5b8c20d16c)
+
+---
 
 **Suggested file structure:**
 

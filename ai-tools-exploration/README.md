@@ -8,8 +8,8 @@ This folder contains my final deliverables for the *AI Tools Exploration* projec
 
 | File Name                  | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|
-| AI_Course_Video.mp4     | A 1+ minute AI-generated video showcasing course highlights and lab tasks. |
-| AI_Course_Presentation.pdf | A 10+ slide AI-designed presentation summarizing theoretical and practical topics. |
+| Video     | A 1+ minute AI-generated video showcasing course highlights and lab tasks. |
+| Presentation Slides | A 10+ slide AI-designed presentation summarizing theoretical and practical topics. |
 | README.md               | This file – detailing tools used, steps followed, and helpful resource links. |
 
 ---

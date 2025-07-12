@@ -1,6 +1,6 @@
 # 🔍 Breadth‑First Search (BFS) in C++
 
-![BFS Banner](https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif)
+![BFS Banner](https://imgs.search.brave.com/lKjgbx2RHKMhRm9WlwLM6eiWR_cROlwbHrkgjGc0abo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9vbGl2/aWFnYWxsdWNjaS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDEvYmZzLmdp/Zg.gif)
 
 > **Breadth‑First Search (BFS)** is a classic graph traversal algorithm used to find the shortest path in an unweighted graph. It explores all neighboring nodes level‑by‑level using a queue data structure.
 

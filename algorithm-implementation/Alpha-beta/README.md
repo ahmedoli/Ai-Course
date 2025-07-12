@@ -1,6 +1,6 @@
 # ♟️ Minimax with Alpha–Beta Pruning in C++
 
-![Alpha–Beta Pruning Banner](https://upload.wikimedia.org/wikipedia/commons/9/97/Alpha-beta_pruning.svg)
+![Alpha–Beta Pruning Banner](https://imgs.search.brave.com/H6LJaOzQ891CwdasSC1enIxkBUx_0Ad_XuAGedv0Ttc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzkxL0FCX3BydW5p/bmcuc3Zn)
 
 > **Alpha–Beta pruning** is an optimization technique for the **Minimax** algorithm that reduces the number of nodes evaluated in the game tree, enabling faster decision‑making in two‑player, perfect‑information games such as Chess, Checkers, and Tic‑Tac‑Toe.
 
