@@ -1,6 +1,8 @@
 
 # 🔍 Iterative Deepening Search (IDS) Algorithm in C++
 
+![Iterative Deepening Search Algorithm Banner](https://images.tpointtech.com/tutorial/ai/images/iterative-deepeningdepth-first-search.png)
+
 > Iterative Deepening Search combines the depth-first search's space efficiency and breadth-first search's completeness by performing depth-limited searches with increasing depth limits until the goal is found.
 
 ---
