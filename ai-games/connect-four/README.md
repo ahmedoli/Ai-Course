@@ -91,18 +91,18 @@ The AI is powered by a **Minimax algorithm** that:
 * 🧩 Here are some visuals of the game:
 
 ### **Menu Screen**
-![Image](./screenshots/menu_screen.jpg)
+![Image](./screenshots/menu_screen.png)
 
 ### **Gameplay - Player's Turn**
-![Image](./screenshots/Gameplay_player's%20turn.jpg)
+![Image](./screenshots/Gameplay_player's%20turn.png)
 
 ### **Gameplay - AI's Turn**
-![Image](./screenshots/Gameplay_AI's%20turn.jpg)
+![Image](./screenshots/Gameplay_AI's%20turn.png)
 
 ### **Winning Screen - Player / AI Wins**
-![Image](./screenshots/Winning%20Screen%20-%20AI%20Wins.jpg)
+![Image](./screenshots/Winning%20Screen%20-%20AI%20Wins.png)
 ### **Gameplay - After wining**
-![Image](./screenshots/Gameplay%20-%20After%20wining.jpg)
+![Image](./screenshots/Gameplay%20-%20After%20wining.png)
 
  
 ---

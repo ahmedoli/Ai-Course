@@ -68,20 +68,20 @@ Key properties:
 > 🧩 Here are some visuals of the game:
 
 ### **Game Board**
-![Image](./Screenshots/Game_Board.jpg)
+![Image](./Screenshots/Game_Board.png)
 
 ### **Player's Turn**
-![Image](./Screenshots/Player's%20Turn.jpg)
+![Image](./Screenshots/Player's%20Turn.png)
 ### **Computer's Turn**
-![Image](./Screenshots/Computer's%20Turn.jpg)
+![Image](./Screenshots/Computer's%20Turn.png)
 ### **after compelete game with multiple moves**
-![Image](./Screenshots/after%20compelete%20game%20with%20multiple%20moves.jpg)
+![Image](./Screenshots/after%20compelete%20game%20with%20multiple%20moves.png)
 ### **Draw Screen**
-![Image](./Screenshots/Draw%20Screen.jpg)
+![Image](./Screenshots/Draw%20Screen.png)
 ### **New game with multiple moves**
-![Image](./Screenshots/New%20game%20with%20multiple%20moves.jpg)
+![Image](./Screenshots/New%20game%20with%20multiple%20moves.png)
 ### **Winning Screen (Computer Wins)**
-![Image](./Screenshots/Winning%20Screen%20(Computer%20Wins).jpg)
+![Image](./Screenshots/Winning%20Screen%20(Computer%20Wins).png)
 
 ---
 
@@ -92,20 +92,13 @@ Key properties:
 |-- tic_tac_toe.py
 |-- README.md
 |-- screenshots/
-    |-- Game Board.jpg
-    |-- Player's Turn.jpg
-    |-- Computer's Turn.jpg
-    |-- after compelete game with multiple moves.jpg
-    |-- Draw Screen.jpg
-    |-- New game with multiple moves.jpg
-    |-- Winning Screen (Computer Wins).jpg
-```
-
-To add screenshots in your `README.md`:
-
-```markdown
-![Gameplay 1](screenshots/gameplay1.png)
-![Gameplay 2](screenshots/gameplay2.png)
+    |-- Game Board.png
+    |-- Player's Turn.png
+    |-- Computer's Turn.png
+    |-- after compelete game with multiple moves.png
+    |-- Draw Screen.png
+    |-- New game with multiple moves.png
+    |-- Winning Screen (Computer Wins).png
 ```
 
 ---
