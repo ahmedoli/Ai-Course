@@ -1,6 +1,8 @@
 
 # 🎮 Minimax Algorithm in C++
 
+![Minimax Algorithm Banner](https://stackabuse.s3.amazonaws.com/media/minimax-and-alpha-beta-pruning-in-python-2.png)
+
 > Minimax is a classic recursive algorithm used in decision making and game theory to find the optimal move for a player, assuming the opponent also plays optimally. It evaluates the game tree to maximize the player's minimum gain.
 
 ---
