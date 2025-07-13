@@ -1,25 +1,21 @@
 
----
-
-````markdown
 # ♟️ Simple Chess in Python (Pygame + python-chess)
 
 A lightweight, beginner-friendly chess game where **you play as White** against a basic **AI-controlled Black**. This project combines **Pygame** for GUI rendering and **python-chess** for rule enforcement, legality checking, and move generation.
+
 
 ---
 
 ## 📸 Screenshots
 
-* 🧩 Here are some visuals of the game:
-
 ### **Start game**
 ![Image](./screenshoots/start_game.png)
 
 ### **Ingame Play**
-![Image](./screenshoots/ingame_play.jpg)
+![Image](./screenshoots/ingame_play.png)
 
 ### **Checkmate**
-![Image](./screenshoots/checkmate_white.jpg)
+![Image](./screenshoots/checkmate_white.png)
 
 ---
 
@@ -32,7 +28,6 @@ A lightweight, beginner-friendly chess game where **you play as White** against 
 ```bash
 git clone https://github.com/yourusername/simple_chess.git
 cd simple_chess
-````
 
 2. **Install Required Packages**:
 
@@ -133,6 +128,5 @@ This project is licensed under the **MIT License**. Feel free to modify, use, or
 * Fonts and symbols: Unicode Chess Symbols
 * Libraries: `pygame`, `python-chess`
 
-```
 
 ---
