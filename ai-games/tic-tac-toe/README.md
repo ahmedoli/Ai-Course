@@ -68,20 +68,20 @@ Key properties:
 > 🧩 Here are some visuals of the game:
 
 ### **Game Board**
-![Image](https://github.com/user-attachments/assets/74c3126c-cd69-4a65-be06-9a722919c0b1)
+![Image](./Screenshots/Game_Board.jpg)
 
 ### **Player's Turn**
-![Image](https://github.com/user-attachments/assets/f3559259-c3f8-4179-8337-eca9df881b9e)
+![Image](./Screenshots/Player's%20Turn.jpg)
 ### **Computer's Turn**
-![Image](https://github.com/user-attachments/assets/aed4246e-9206-4b1f-9a99-70881cc23e50)
+![Image](./Screenshots/Computer's%20Turn.jpg)
 ### **after compelete game with multiple moves**
-![Image](https://github.com/user-attachments/assets/eefa65e4-2816-4f12-a3ad-0b7fac1e98d6)
+![Image](./Screenshots/after%20compelete%20game%20with%20multiple%20moves.jpg)
 ### **Draw Screen**
-![Image](https://github.com/user-attachments/assets/d92f71cd-a685-4b5e-8ad4-2e0e016434ba)
+![Image](./Screenshots/Draw%20Screen.jpg)
 ### **New game with multiple moves**
-![Image](https://github.com/user-attachments/assets/4e8d4690-dece-4f52-96d2-70430165a2ba)
-### **Winning Screen (Player/Computer Wins)**
-![Image](https://github.com/user-attachments/assets/0aef7239-dba7-492f-b9cc-0c5b8c20d16c)
+![Image](./Screenshots/New%20game%20with%20multiple%20moves.jpg)
+### **Winning Screen (Computer Wins)**
+![Image](./Screenshots/Winning%20Screen%20(Computer%20Wins).jpg)
 
 ---
 
@@ -92,8 +92,13 @@ Key properties:
 |-- tic_tac_toe.py
 |-- README.md
 |-- screenshots/
-    |-- gameplay1.png
-    |-- gameplay2.png
+    |-- Game Board.jpg
+    |-- Player's Turn.jpg
+    |-- Computer's Turn.jpg
+    |-- after compelete game with multiple moves.jpg
+    |-- Draw Screen.jpg
+    |-- New game with multiple moves.jpg
+    |-- Winning Screen (Computer Wins).jpg
 ```
 
 To add screenshots in your `README.md`:
