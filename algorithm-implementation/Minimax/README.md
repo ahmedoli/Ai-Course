@@ -28,16 +28,28 @@
 
 ## 🖥 Sample Input / Output
 
-### Input
+### ➡️ Input
 
+```
 Enter height of the game tree: 3
 Enter 8 leaf node values:
 3 5 2 9 12 5 23 23
+```
 
+### ✅ Output
 
-### Output
-
+```
 Optimal value: 12
+
+```
+
+### 🖼 Screenshots
+
+**➡️ Input Example:**
+![Input Screenshot](./Image/Minimax_input.png)
+
+**✅ Output Example:**
+![Output Screenshot](./Image/Minimax_output.png)
 
 
 ---

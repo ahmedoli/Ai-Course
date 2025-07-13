@@ -48,16 +48,16 @@ Enter start and goal: 0 5
 ### 🔽 Output
 
 ```
-Path found (meeting point at 3 or 5)
+Path found (meeting point at 2 or 4)
 ```
 
 ### 🖼 Example Screenshots
 
 **➡️ Input View:**
-![Input Screenshot](https://i.imgur.com/NKOdx9h.png)
+![Input Screenshot](./Image/bidirectional_search_input.png)
 
 **✅ Output View:**
-![Output Screenshot](https://i.imgur.com/WrdbRzK.png)
+![Output Screenshot](./Image/bidirectional_search_output.png)
 
 ---
 

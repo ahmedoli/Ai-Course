@@ -34,7 +34,7 @@ This DFS implementation uses **path stacks** instead of traditional recursion to
 
 ## 🖥 Sample Input / Output
 
-### ✅ Input
+### ➡️ Input
 
 ```
 Enter number of nodes: 6
@@ -69,10 +69,10 @@ DFS Path from 0 to 5: 0 2 4 5
 ### 🖼 Screenshots
 
 **➡️ Input Example:**
-![Input Screenshot](https://i.imgur.com/Tu5eqEd.png)
+![Input Screenshot](./Image/DFS_input.png)
 
 **✅ Output Example:**
-![Output Screenshot](https://i.imgur.com/71eDh2E.png)
+![Output Screenshot](./Image/DFS_output.png)
 
 ---
 

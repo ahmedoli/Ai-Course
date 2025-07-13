@@ -29,7 +29,9 @@ This method explores nodes level by level, but uses depth-first traversal with l
 
 ## 🖥 Sample Input / Output
 
-### Input
+### ➡️ Input
+
+```
 
 Enter number of nodes and edges: 6 7
 Enter edges (u v):
@@ -41,10 +43,22 @@ Enter edges (u v):
 3 5
 4 5
 Enter start and goal node: 0 5
+```
 
+### ✅ Output
 
-### Output
+```
 Goal found at depth 3
+
+```
+
+### 🖼 Screenshots
+
+**➡️ Input Example:**
+![Input Screenshot](./Image/Iterative_deepening_input.png)
+
+**✅ Output Example:**
+![Output Screenshot](./Image/Iterative_deepening_output.png)
 
 
 ---

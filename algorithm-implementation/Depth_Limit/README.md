@@ -53,10 +53,10 @@ Goal found at node: 5
 ### 🖼 Example Screenshots
 
 **➡️ Input Example:**
-![Input Screenshot](https://i.imgur.com/cSxgItR.png)
+![Input Screenshot](./Image/depth_limit_input.png)
 
 **✅ Output Example:**
-![Output Screenshot](https://i.imgur.com/m6doQcj.png)
+![Output Screenshot](./Image/depth_limit_output.png)
 
 ---
 

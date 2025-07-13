@@ -59,11 +59,11 @@ Reached peak at node: 4
 
 **➡️ Input Example:**
 
-![Input Screenshot](https://i.imgur.com/3D6Yj7I.png)
+![Input Screenshot](./Image/oa_star_input.png)
 
 **✅ Output Example:**
 
-![Output Screenshot](https://i.imgur.com/ZbPWeTx.png)
+![Output Screenshot](./Image/oa_star_output.png)
 
 ---
 

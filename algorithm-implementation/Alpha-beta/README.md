@@ -53,7 +53,17 @@ Enter 8 leaf node values:
 ```
 Optimal value with alpha-beta pruning: 12
 ```
+---
 
+### 🖼 Example Screenshots
+
+**➡️ Input View:**
+![Input Screenshot](./Image/alpha-beta.input.png)
+
+**✅ Output View:**
+![Output Screenshot](./Image/alpha-beta.output.png)
+
+---
 
 ## 🚀 Applications of Alpha–Beta Pruning
 

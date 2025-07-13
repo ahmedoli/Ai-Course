@@ -61,6 +61,17 @@ Visiting Node: 4 with Heuristic: 3
 Visiting Node: 5 with Heuristic: 0
 Goal Node 5 found!
 ```
+---
+
+### 🖼 Example Screenshots
+
+**➡️ Input View:**
+![Input Screenshot](./Image/Best-First_input.png)
+
+**✅ Output View:**
+![Output Screenshot](./Image/Best-First_output.png)
+
+---
 
 ## 🚀 Applications of Greedy Best‑First Search
 
