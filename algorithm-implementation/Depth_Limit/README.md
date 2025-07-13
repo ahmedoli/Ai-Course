@@ -1,6 +1,6 @@
 # ⛏️ Depth‑Limited Search (DLS) in C++
 
-![Depth‑Limited Search Banner](https://upload.wikimedia.org/wikipedia/commons/2/28/Depth-limited_search.svg)
+![Depth‑Limited Search Banner](https://images.tpointtech.com/tutorial/ai/images/depth-limited-search-algorithm.png)
 
 > **Depth‑Limited Search** is a variant of Depth‑First Search that explores the search tree up to a user‑defined depth limit `L`. It prevents infinite descent in cyclic or infinite graphs and forms the basis for Iterative Deepening Search (IDS).
 

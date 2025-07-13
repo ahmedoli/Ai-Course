@@ -1,6 +1,6 @@
 # 🔄 AO\* (Hill‑Climbing‑style) Search in C++
 
-![AO\* Search Banner](https://upload.wikimedia.org/wikipedia/commons/4/43/Hill_climbing.gif)
+![AO\* Search Banner](https://images.tpointtech.com/tutorial/ai/images/hill-climbing-algorithm-in-ai5.png)
 
 > This implementation demonstrates a **Greedy Hill‑Climbing / AO**\*‑style search on a directed graph using heuristic values. The algorithm repeatedly moves to the neighbor with the lowest heuristic until no improvement is possible, representing a local optimum.
 

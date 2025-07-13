@@ -1,7 +1,8 @@
 
 # 🔦 Beam Search Algorithm in C++
 
-![Beam Search Banner](https://upload.wikimedia.org/wikipedia/commons/6/6e/Beam_search_visualization.png)
+![Beam Search Banner](<img width="860" height="791" alt="image" src="https://github.com/user-attachments/assets/f39bd12d-7cc5-4250-a1d7-d2cb2ddade5a" />
+c.png)
 
 > **Beam Search** is a heuristic search algorithm that explores a graph level‑by‑level like Breadth‑First Search (BFS) but restricts the frontier to a fixed number of the most promising nodes (the **beam width**). This keeps memory and time usage manageable while still biasing the search toward low‑cost (or low‑heuristic) paths.
 

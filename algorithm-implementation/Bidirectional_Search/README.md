@@ -1,6 +1,6 @@
 # 🔁 Bidirectional Search in C++
 
-![Bidirectional Search](https://upload.wikimedia.org/wikipedia/commons/9/9b/Bidirectional_search.svg)
+![Bidirectional Search](https://www.askpython.com/wp-content/uploads/2022/07/bidirectional-graph-1-1024x1024.png)
 
 > **Bidirectional Search** is an efficient graph traversal algorithm that runs two simultaneous BFS traversals — one forward from the start node and one backward from the goal node — until they meet. This reduces the effective search space from `O(b^d)` to `O(b^{d/2})`.
 

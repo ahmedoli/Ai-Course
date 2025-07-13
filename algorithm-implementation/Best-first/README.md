@@ -1,6 +1,6 @@
 # 🚀 Greedy Best‑First Search in C++
 
-![Best‑First Search Banner](https://upload.wikimedia.org/wikipedia/commons/6/66/Greedy_best_first_search.gif)
+![Best‑First Search Banner](https://raw.githubusercontent.com/Codecademy/docs/main/media/greedy-best-first-search-example-graph.png)
 
 > **Greedy Best‑First Search (GBFS)** expands the node that appears to be closest to the goal, measured solely by a heuristic `h(n)`. It is memory‑efficient compared to Uniform‑Cost or A\* and often finds a good (though not always optimal) path quickly.
 
