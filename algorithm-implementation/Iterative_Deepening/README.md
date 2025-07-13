@@ -53,13 +53,14 @@ Goal found at depth 3
 ```
 
 ### 🖼 Screenshots
-
+```
 **➡️ Input Example:**
 ![Input Screenshot](./Image/Iterative_deepening_input.png)
-
+```
+```
 **✅ Output Example:**
 ![Output Screenshot](./Image/Iterative_deepening_output.png)
-
+```
 
 ---
 
