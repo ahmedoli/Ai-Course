@@ -10,9 +10,16 @@ A lightweight, beginner-friendly chess game where **you play as White** against 
 
 ## 📸 Screenshots
 
-| Opening Position | In Play | Checkmate |
-|------------------|---------|------------|
-| ![Opening](./screenshoots/start_game.png) | ![In Play](./screenshoots/ingame_play.jpg) | ![Checkmate](./screenshoots/checkmate_white.jpg) |
+* 🧩 Here are some visuals of the game:
+
+### **Start game**
+![Image](./screenshoots/start_game.png)
+
+### **Ingame Play**
+![Image](./screenshoots/ingame_play.jpg)
+
+### **Checkmate**
+![Image](./screenshoots/checkmate_white.jpg)
 
 ---
 
